@@ -7,10 +7,9 @@
     "doc": "docs"
   },
   "scripts": {
-    "dev": "nodemon src/app.js",
-    "start": "node src/app.js",
+    "dev": "node init && nodemon src/app.js",
+    "start": "node init && node src/app.js",
     "seed": "node src/seeds/seed.js"
-
   },
   "keywords": [],
   "author": "",
