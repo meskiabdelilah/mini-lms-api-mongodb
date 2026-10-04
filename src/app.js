@@ -1,6 +1,8 @@
 import express from "express";
 import dotenv from "dotenv";
 import connectDatabase from "./config/database.js";
+import coursesRouter from './routes/courses.routes.js';
+import modulesRouter from './routes/modules.routes.js';
 
 dotenv.config();
 
@@ -16,6 +18,9 @@ app.get("/health", (req, res) => {
     service: "mini-lms-api",
   });
 });
+
+app.use("/api/courses",coursesRouter);
+app.use("/api/modules", modulesRouter);
 
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
