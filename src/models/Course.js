@@ -3,19 +3,19 @@ import mongoose from "mongoose";
 const courseSchema = new mongoose.Schema({
   title: {
     type: String,
-    require: true,
+    required: true,
   },
   description: {
     type: String,
-    require: true,
+    required: true,
   },
   category: {
     type: String,
-    require: true,
+    required: true,
   },
   level: {
     type: String,
-    require: true,
+    required: true,
   },
   published: {
     type: Boolean,
@@ -23,7 +23,7 @@ const courseSchema = new mongoose.Schema({
   },
   createdAt: {
     type: Date,
-    default: Date.new
+    default: Date.now
   }
 });
 

@@ -22,7 +22,7 @@ const resourceSchema = new mongoose.Schema({
   module: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "Module",
-    require: true
+    required: true
   }
 });
 

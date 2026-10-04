@@ -3,16 +3,16 @@ import mongoose from "mongoose";
 const moduleSchema = new mongoose.Schema({
     title: {
         type: String,
-        require: true
+        required: true
     },
     order: {
         type: Number,
-        require: true
+        required: true
     },    
     course: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "Course",
-        require: true
+        required: true
     }
 });
 
