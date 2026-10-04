@@ -1,5 +1,8 @@
 import mongoose from "mongoose";
 
+/**
+ * Represents a learning resource that belongs to a Module.
+ */
 const resourceSchema = new mongoose.Schema({
     title: {
     type: String,

@@ -1,5 +1,9 @@
 import mongoose from "mongoose";
 
+/**
+ * Represents a course in the LMS.
+ * A course contains general information such as title, category and level.
+ */
 const courseSchema = new mongoose.Schema({
   title: {
     type: String,

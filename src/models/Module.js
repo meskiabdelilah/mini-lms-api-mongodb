@@ -1,5 +1,8 @@
 import mongoose from "mongoose";
 
+/**
+ * Represents a module that belongs to a Course.
+ */
 const moduleSchema = new mongoose.Schema({
     title: {
         type: String,

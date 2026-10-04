@@ -1,5 +1,10 @@
 import mongoose from "mongoose";
 
+
+/**
+ * Connects the application to MongoDB using the MONGODB_URI environment variable.
+ * Stops the Node.js process if the connection fails.
+ */
 const connectDatabase = async () => {
     try {
         await mongoose.connect(process.env.MONGODB_URI);
